@@ -1,0 +1,26 @@
+The Bertrand's box paradox is a statistical problem poster by Joseph Bertrand, in his 1889 work, Calcul des probabilités.
+
+The problem:
+There are three boxes:
+
+a box containing two gold coins,
+a box containing two silver coins,
+a box containing one gold coin and one silver coin.
+The 'paradox' is in the probability, after choosing a box at random and withdrawing one coin at random, 
+if that happens to be a gold coin, of the next coin drawn from the same box also being a gold coin.
+
+The solution is 66%, though we normally guess 50%. Why is that?
+It is normal to think that, since the silver box can't be the chosen box, and you have a gold coin at hand, you can either 
+have another gold coin in the box(from gold gold box), or a silver coin(from the silver gold box).
+But the gold box can have both of its coins taken from the draw: in the world of possible probabilities, there are 3 gold coins
+and you are either:
+a: holding a gold coin from the silver gold box, in which case there is a silver coin in the box
+b: holding a gold coin from the gold gold box, but since there are two gold coins, you could have picked either:
+b1: left gold coin, leaving the right gold coin in the box
+b2: right gold coin, leaving the left gold coin in the box
+
+This may seem counter intuitive, but we are going to use the law of large numbers to determine if we are right or not, so after playing
+the game 100.000 times, the probability of finding another gold box should be the real probability P.
+
+For more details, and a more formal statistical solution, using conditional probability from Bayes's theorem, please look at wikipedia, in this link:
+https://en.wikipedia.org/wiki/Bertrand%27s_box_paradox
