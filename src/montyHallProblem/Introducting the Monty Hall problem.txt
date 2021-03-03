@@ -1,0 +1,24 @@
+The Monty Hall problem is one of the most well known problems  in statictics, because of its background.
+It is loosely based in the TV game show Let's make a deal, and its named after the game host, Monty Hall.
+
+The problem was proposed and solved by Steve Selvin in the american statistician, one of the most imporant papers covering statistics,
+but it really became popular with Marilyn Vos Savant's column "Ask Marilyn", in parade magazine.
+
+The problem:
+"Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. 
+You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat.
+He then says to you, "Do you want to pick door No. 2?" Is it to your advantage to switch your choice?"
+
+The solution is: yes you pick door number two, because there is a 66% of the prize being there.
+Explaining why this is the case is beyond what I intend to achieve here, but it involves the bayesian theorem of conditional probability.
+
+You can read more about it(and play the game yourself) here:
+https://betterexplained.com/articles/understanding-the-monty-hall-problem/
+
+You can also check wikipedia for a more detailed statistical problem, the context where it was proposed, and all the outrage that came with it:
+https://en.wikipedia.org/wiki/Monty_Hall_problem
+
+What I intend to demonstrate is that the answer is indeed correct, but using the law of large numbers, which proposes that if you play a game N, with
+an odd of X, over and over again, X tends to normalize to P, the real probability of the event in question.
+
+We will simulate 100.000 rounds of the problem, then see if it was worth to change doors, as proposed, or to stay with our guts, and HOLD THE DOOR. 
