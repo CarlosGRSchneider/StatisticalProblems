@@ -1,0 +1,21 @@
+The birthday problem is another question that is found in Marilyn vos Savant's column, Ask Marilyn, in parade magazine.
+
+This is the question:
+How large must a class be to make the probability of finding two people with the same birthday at least 50%?
+
+The answer to this questions is: 23. 
+More often than not, people think that this is such a low number. We have 365 days for 23 people to have a birthday, and 
+yet, we can get two people with the same birthday with less than 10% of the number of avaiable days.
+
+To answer this question statistically, we have to sum the odds of two people having a birthday in the same day. I will use
+a different approach, but you can read more about the problem(and its solution) here:
+https://www.pleacher.com/mp/mlessons/stat/mobbday.html
+
+What I will do is:
+have a list with 23 people
+assign them random birthdays
+make a set from that list
+if set < list, then we have at least two people sharing a birthday
+repeat 100.000 times
+
+If we are to believe in statistics, this will return a probability greater than 50%. So, let's find it out.
